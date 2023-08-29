@@ -122,6 +122,7 @@ console.log(names);
 
 
 
+
 //Exercise 8 Трансформировать в объекты
 
 let vasya = { name: "Вася", surname: "Пупкин", id: 1 };
@@ -141,6 +142,7 @@ console.log( usersMapped[0].fullName )
 
 
 
+
 //Exercise 9 Отсортировать пользователей по возрасту
 
 function sortByAge(arr) {
@@ -155,7 +157,6 @@ let arr = [ vasya, petya, masha ];
 
 sortByAge(arr);
 
-// теперь: [vasya, masha, petya]
 console.log(arr[0].name); // Вася
 console.log(arr[1].name); // Маша
 console.log(arr[2].name);
@@ -184,6 +185,8 @@ console.log( getAverageAge(arr) ); // (25 + 30 + 29) / 3 = 28
 
 
 
+
+
 //Exercise 12 Оставить уникальные элементы массива
 
 function unique(arr) {
@@ -204,8 +207,8 @@ console.log( unique(strings) );
 
 
 
-//Exercise 13 Создайте объект с ключами из массива
 
+//Exercise 13 Создайте объект с ключами из массива
 
 function groupById(arr) {
     return arr.reduce((res, item) => {
