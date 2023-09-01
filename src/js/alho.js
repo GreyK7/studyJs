@@ -1,5 +1,7 @@
 "use strict"
 
+
+//Поиск в ширину
 let graph = {};
 
 graph ["you"] = [ "alice", "bob", "claire"];
@@ -34,3 +36,49 @@ function findHill(start) {
 }
 
 console.log(findHill(graph['you']));
+
+
+//Алгоритм Дейкстры
+
+// let graph = {
+//     'start': {'a': 6, 'b': 2},
+//     'a': {'end': 1},
+//     'b': {'a': 3, 'end': 5}
+// }
+
+// let costs = {
+//     'a': 6,
+//     'b': 2,
+//     'end': Infinity
+// }
+
+// let parents = {
+//     'a': 'start',
+//     'b': 'start',
+//     'end': null
+// }
+
+// function findLowestNode(costs) {
+//     let array = Object.entries(costs);
+//     let lowest = array[0][1];
+//     let lowestNode = array[0][0];
+//     array.forEach(item => {
+//         if (item[1] < lowest) {
+//             lowest = item[1];
+//             lowestNode = item[0];
+//         }
+//     });
+//     return lowestNode;
+// }
+
+
+// function searchDeks (start) {
+//     let lowestNode = findLowestNode(costs);
+//     while (lowestNode) {
+//         let cost = costs[lowestNode];
+//         let neighbours = graph[lowestNode];
+//     }
+// }
+
+
+// console.log(searchDeks(graph['start']));
