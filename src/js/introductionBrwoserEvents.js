@@ -8,3 +8,7 @@ button.onclick = function() {
     // button.hidden = true;
     button.setAttribute('hidden', '');
 }
+
+document.addEventListener('mousedown', (e) => {
+    e.preventDefault();
+})
